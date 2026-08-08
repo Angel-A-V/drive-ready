@@ -11,11 +11,11 @@
 - evidence: explained why one language end-to-end avoids splitting attention across ecosystems
 
 ## node-js
-- status: introduced
+- status: practicing
 - depends-on: javascript-fundamentals
 - introduced: 2026-08-06
-- last-reviewed: 2026-08-06
-- evidence: agreed backend runs in JS via Node as a direct consequence of Decision 1
+- last-reviewed: 2026-08-08
+- evidence: agreed backend runs in JS via Node as a direct consequence of Decision 1; diagnosed (with guidance) why `node` failed to resolve on Windows/WSL while `npm` worked — landed on the exact-filename-match mechanism (`node.exe` vs a plain `npm` script) after two guesses
 
 ## express
 - status: introduced
@@ -158,11 +158,11 @@
 - evidence: —
 
 ## npm-and-package-json
-- status: seed
+- status: practicing
 - depends-on: node-js
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-08
+- last-reviewed: 2026-08-08
+- evidence: explained package.json as the manifest listing scripts/dependencies; ran `npm create vite@latest .` himself and, without being told, correctly reasoned that `index.html` got overwritten because Vite's scaffold needs a file at that exact name/path, while `styles.css` survived because Vite's stylesheet lives at a different path — applying the exact-name-match idea from the node/npm case to a new situation
 
 ## express-routes
 - status: seed
