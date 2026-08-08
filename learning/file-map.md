@@ -17,5 +17,5 @@
 - package-lock.json — generated (2026-08-08) — exact locked versions of every installed package and sub-dependency; never hand-edited → [[npm-and-package-json]]
 - node_modules/ — generated (2026-08-08) — downloaded package code from npm install; gitignored, never edited, rebuildable via `npm install` → [[npm-and-package-json]]
 - .gitignore — known (2026-08-08) — added by the Vite scaffold; excludes node_modules, build output, editor files from git
-- src/main.js — known (2026-08-08) — JS entry point loaded by index.html; imports Three.js (`import * as THREE from 'three'`) and is where the 3D scene code will live → [[three-js]]
+- src/main.js — known (2026-08-08) — JS entry point loaded by index.html; sets up the Three.js Scene, Camera, and Renderer and appends the render canvas to the page → [[three-js]] [[three-js-scene-camera-renderer]]
 - public/favicon.svg — known (2026-08-08) — browser tab icon, referenced by index.html's `<link rel="icon">`

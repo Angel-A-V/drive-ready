@@ -130,11 +130,11 @@
 - evidence: correctly predicted (before trying) that a live edit to h1 text in DevTools would not change index.html on disk, and that refreshing would revert the edit; confirmed both hands-on and explained the file-vs-live-DOM distinction in his own words
 
 ## three-js-scene-camera-renderer
-- status: seed
+- status: practicing
 - depends-on: three-js
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-08
+- last-reviewed: 2026-08-08
+- evidence: filled in `camera.position.z = 5` himself; correctly predicted the page would show no visible shape (empty scene, nothing to render) before checking; after refreshing, correctly explained why the canvas appeared solid black (WebGL's default clear color) and why the `<h1>` was still visible (canvas just appended after it in normal document flow, not replacing it)
 
 ## 3d-geometry-materials
 - status: seed

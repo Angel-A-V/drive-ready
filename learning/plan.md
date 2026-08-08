@@ -24,7 +24,7 @@
 
 - [x] Check for Node.js/npm and scaffold the project with Vite — concepts: node-js, npm-and-package-json
 - [x] Install Three.js and understand npm dependencies/imports — concepts: three-js
-- [ ] Set up the basic scene, camera, and renderer — concepts: three-js-scene-camera-renderer
+- [x] Set up the basic scene, camera, and renderer — concepts: three-js-scene-camera-renderer
 - [ ] Add a 3D object to the scene (geometry + material) — concepts: 3d-geometry-materials
 - [ ] Add the render loop so it actually draws continuously — concepts: render-loop
 - [ ] Add camera controls so you can look around the scene — concepts: camera-controls
