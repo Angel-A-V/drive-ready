@@ -6,14 +6,15 @@
 - Backend: Node.js + Express — the de facto standard Node framework, largest community and beginner-doc coverage.
 - Database: MongoDB — JSON-shaped documents match JS objects, keeping the data "shape" consistent through the whole stack.
 - Hosting: Cloudflare (frontend) + Railway (backend) + MongoDB Atlas (database) — leverages the learner's existing hands-on experience with Cloudflare and Railway; Atlas offloads database security/ops to a managed service.
+- Frontend tooling: no build tool for Section 1 (raw HTML/CSS opened directly); add Vite once Three.js needs npm packages in Section 2. Vite is a dev server/bundler, not a UI framework, so it doesn't conflict with the vanilla-JS decision above. Learner has used Vite in past projects but never learned how it actually works — Section 2 should teach the internals, not just drop it in as a familiar black box.
 
 ## Sections
 ### 1. A basic page rendering locally  [ ] not started
 **Deliverable:** A plain HTML/CSS page open and viewable in the browser, no server involved.
 **Concepts:** html, css, dom
 
-- [ ] Set up the project folder and initialize git — concepts: git
-- [ ] Write a minimal HTML page and open it directly in the browser — concepts: html, dom
+- [x] Set up the project folder and initialize git — concepts: git
+- [x] Write a minimal HTML page and open it directly in the browser — concepts: html, dom
 - [ ] Style the page with CSS — concepts: css
 - [ ] Inspect the live page with browser dev tools to see the DOM — concepts: dom
 

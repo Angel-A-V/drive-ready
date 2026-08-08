@@ -74,11 +74,11 @@
 - evidence: —
 
 ## git
-- status: seed
+- status: practicing
 - depends-on: none
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-06
+- last-reviewed: 2026-08-06
+- evidence: ran git init/add/commit hands-on for the first commit; correctly predicted staging behavior; initially thought a repo gets a "name" from its folder, corrected after seeing real `git init` output
 
 ## three-js
 - status: seed
@@ -86,6 +86,13 @@
 - introduced: —
 - last-reviewed: —
 - evidence: —
+
+## github-remote
+- status: practicing
+- depends-on: git
+- introduced: 2026-08-06
+- last-reviewed: 2026-08-06
+- evidence: used `gh repo create --source=. --remote=origin` and `git push -u origin main` hands-on; correctly predicted the repo would appear on GitHub's site, initially expected push output to mirror commit's insertion stats — corrected after seeing real output (push reports remote branch state, not a file diff)
 
 ## rest-api
 - status: seed
@@ -102,11 +109,11 @@
 - evidence: —
 
 ## html
-- status: seed
+- status: practicing
 - depends-on: none
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-08
+- last-reviewed: 2026-08-08
+- evidence: wrote title and h1 fill-ins in index.html himself; correctly predicted what the tab title and page heading would show before opening the file in the browser
 
 ## css
 - status: seed
