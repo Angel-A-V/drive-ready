@@ -9,14 +9,14 @@
 - Frontend tooling: no build tool for Section 1 (raw HTML/CSS opened directly); add Vite once Three.js needs npm packages in Section 2. Vite is a dev server/bundler, not a UI framework, so it doesn't conflict with the vanilla-JS decision above. Learner has used Vite in past projects but never learned how it actually works — Section 2 should teach the internals, not just drop it in as a familiar black box.
 
 ## Sections
-### 1. A basic page rendering locally  [ ] not started
+### 1. A basic page rendering locally  [x] complete
 **Deliverable:** A plain HTML/CSS page open and viewable in the browser, no server involved.
 **Concepts:** html, css, dom
 
 - [x] Set up the project folder and initialize git — concepts: git
 - [x] Write a minimal HTML page and open it directly in the browser — concepts: html, dom
 - [x] Style the page with CSS — concepts: css
-- [ ] Inspect the live page with browser dev tools to see the DOM — concepts: dom
+- [x] Inspect the live page with browser dev tools to see the DOM — concepts: dom
 
 ### 2. A static Three.js scene  [ ] not started
 **Deliverable:** A single 3D driving scenario rendering on the page with a controllable camera — "it exists and I can look around."

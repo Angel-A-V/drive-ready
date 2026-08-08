@@ -123,11 +123,11 @@
 - evidence: filled in background-color and h1 color values in styles.css himself and correctly predicted the visual result; correctly predicted that a typo'd property (`colr`) would be silently ignored rather than error, showing real understanding of CSS's forgiving parser
 
 ## dom
-- status: seed
+- status: practicing
 - depends-on: html
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-08
+- last-reviewed: 2026-08-08
+- evidence: correctly predicted (before trying) that a live edit to h1 text in DevTools would not change index.html on disk, and that refreshing would revert the edit; confirmed both hands-on and explained the file-vs-live-DOM distinction in his own words
 
 ## three-js-scene-camera-renderer
 - status: seed
