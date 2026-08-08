@@ -81,11 +81,11 @@
 - evidence: ran git init/add/commit hands-on for the first commit; correctly predicted staging behavior; initially thought a repo gets a "name" from its folder, corrected after seeing real `git init` output
 
 ## three-js
-- status: seed
+- status: practicing
 - depends-on: javascript-fundamentals
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-08
+- last-reviewed: 2026-08-08
+- evidence: ran `npm install three` and correctly predicted both effects (node_modules entry + package.json update) before checking; after guidance, explained the dependencies-vs-devDependencies split (Vite is a build-time tool, Three.js code ships and runs in the browser); wrote the `import * as THREE from 'three'` line himself; correctly predicted the page would render cleanly and the console would log a version number, then confirmed it printed 185, matching the installed package.json version
 
 ## github-remote
 - status: practicing
@@ -162,7 +162,7 @@
 - depends-on: node-js
 - introduced: 2026-08-08
 - last-reviewed: 2026-08-08
-- evidence: explained package.json as the manifest listing scripts/dependencies; ran `npm create vite@latest .` himself and, without being told, correctly reasoned that `index.html` got overwritten because Vite's scaffold needs a file at that exact name/path, while `styles.css` survived because Vite's stylesheet lives at a different path — applying the exact-name-match idea from the node/npm case to a new situation
+- evidence: explained package.json as the manifest listing scripts/dependencies; ran `npm create vite@latest .` himself and, without being told, correctly reasoned that `index.html` got overwritten because Vite's scaffold needs a file at that exact name/path, while `styles.css` survived because Vite's stylesheet lives at a different path — applying the exact-name-match idea from the node/npm case to a new situation; distinguished `dependencies` (ships/runs in the final product) from `devDependencies` (build-time only) after guided discussion
 
 ## express-routes
 - status: seed
