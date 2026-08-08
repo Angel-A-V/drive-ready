@@ -15,7 +15,7 @@
 
 - [x] Set up the project folder and initialize git — concepts: git
 - [x] Write a minimal HTML page and open it directly in the browser — concepts: html, dom
-- [ ] Style the page with CSS — concepts: css
+- [x] Style the page with CSS — concepts: css
 - [ ] Inspect the live page with browser dev tools to see the DOM — concepts: dom
 
 ### 2. A static Three.js scene  [ ] not started

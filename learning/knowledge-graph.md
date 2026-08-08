@@ -116,11 +116,11 @@
 - evidence: wrote title and h1 fill-ins in index.html himself; correctly predicted what the tab title and page heading would show before opening the file in the browser
 
 ## css
-- status: seed
+- status: practicing
 - depends-on: html
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-08
+- last-reviewed: 2026-08-08
+- evidence: filled in background-color and h1 color values in styles.css himself and correctly predicted the visual result; correctly predicted that a typo'd property (`colr`) would be silently ignored rather than error, showing real understanding of CSS's forgiving parser
 
 ## dom
 - status: seed

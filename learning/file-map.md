@@ -10,3 +10,4 @@
 - learning/file-map.md — known (2026-08-06) — this file: why every file in the repo exists
 - .git/ — generated (2026-08-06) — created by `git init`; holds the full commit history, never edit directly → [[git]]
 - index.html — known (2026-08-08) — the homepage; opened directly in the browser, no server yet → [[html]]
+- styles.css — known (2026-08-08) — styling for index.html, linked via `<link rel="stylesheet">` → [[css]]
