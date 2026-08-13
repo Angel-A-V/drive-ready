@@ -25,3 +25,14 @@ Two things, every time:
 
 ## `THREE.REVISION`
 A property Three.js exposes containing its own version number — a quick way to confirm the library actually loaded and which build you're running. Printed `185`, matching the `^0.185.1` installed in `package.json`.
+
+## Geometry vs. material
+- **Geometry** — the shape itself: raw vertex data (for `BoxGeometry(width, height, depth)`, the 8 corners of a box). Knows nothing about color or appearance.
+- **Material** — how the surface looks: color, shininess, whether it reacts to light. Knows nothing about shape.
+- A **`Mesh`** is what glues one geometry + one material together into a single object Three.js can actually draw. `scene.add(mesh)` is the Three.js-scene-graph equivalent of `document.body.appendChild(...)` for the DOM — same idea ("insert this into the tree the renderer walks"), different tree.
+
+## `MeshBasicMaterial` ignores lighting — on purpose
+`MeshBasicMaterial` always shows its flat, literal color, regardless of whether the scene has any lights. That's exactly why it's a good early choice: this scene has zero lights so far, and a *lit* material (like `MeshStandardMaterial`) would render pure black with no light to react to. Easy trap: it's tempting to think an unlit material is "showing you what light looks like hitting the object" — it's the opposite, it skips lighting math entirely.
+
+## Object literal shorthand bug: `{FFC5D3}` vs `{ color: 0xFFC5D3 }`
+`{ }` in JS holds key/value pairs. `{FFC5D3}` is actually valid syntax, but it means something specific: **shorthand** for `{ FFC5D3: FFC5D3 }` — a property named `FFC5D3` whose value comes from an existing variable of the same name. Since no such variable existed, this throws a `ReferenceError` at runtime. The fix is spelling out the key: `{ color: 0xFFC5D3 }`.

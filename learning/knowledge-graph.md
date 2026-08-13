@@ -137,11 +137,11 @@
 - evidence: filled in `camera.position.z = 5` himself; correctly predicted the page would show no visible shape (empty scene, nothing to render) before checking; after refreshing, correctly explained why the canvas appeared solid black (WebGL's default clear color) and why the `<h1>` was still visible (canvas just appended after it in normal document flow, not replacing it)
 
 ## 3d-geometry-materials
-- status: seed
+- status: practicing
 - depends-on: three-js
-- introduced: —
-- last-reviewed: —
-- evidence: —
+- introduced: 2026-08-12
+- last-reviewed: 2026-08-12
+- evidence: wrote BoxGeometry + MeshBasicMaterial + Mesh + scene.add(cube) himself; correctly predicted a centered pink square before refreshing and confirmed it; correctly explained geometry as shape defined by vertices; initially had MeshBasicMaterial backwards (thought it demonstrated how light hits the object) — corrected after connecting it to the zero-lights-in-scene fact and confirmed the reasoning against what he actually saw on screen
 
 ## render-loop
 - status: seed
